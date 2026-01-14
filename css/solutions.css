@@ -132,5 +132,25 @@ sui link di navigazione (sfondo più scuro e testo blu) */
   color: cornflowerblue;
 }
 
+/* 13. Virgolette decorative nella citazione */
+/* Aggiungere virgolette decorative (") sopra a sinistra 
+e sotto a destra della citazione, con opacità ridotta */
+/* 13) Virgolette decorative nella citazione */
+.quote-box::before,
+.quote-box::after {
+  content: '"';
+  position: absolute;
+  font-size: 3.2rem;
+  opacity: 0.18;
+  line-height: 1;
+}
 
+.quote-box::before {
+  top: 10px;
+  left: 14px;
+}
 
+.quote-box::after {
+  bottom: 10px;
+  right: 14px;
+}
