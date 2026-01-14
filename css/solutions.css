@@ -36,6 +36,18 @@ deve sollevarsi di 5px e aumentare l'ombra */
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
+/* 4. 📌 EVIDENZIARE IL SECONDO PIANO DI ALLENAMENTO */
+/* Aggiungere un bordo arancione a sinistra (5px) 
+e Cambiare lo sfondo in un giallo molto chiaro al secondo workout plan 
+(Forza e Resistenza)*/
+
+.workout-section .workout-plan:nth-of-type(2) {
+  border-left: 5px solid orange;
+  background: lemonchiffon;
+}
+
+
+
 
 
 
