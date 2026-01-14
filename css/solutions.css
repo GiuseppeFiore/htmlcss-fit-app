@@ -1,4 +1,4 @@
-/* 1. 🔥 Icona fuoco nella prima stat card */
+/* 1. 🔥 ICONA FUOCO NELLA PRIMA STAT CARD */
 .stats-grid:first-child .stat-number::before {
     content: "🔥";
     display: block;
@@ -6,4 +6,16 @@
     line-height: 1;
     margin-bottom: 6px;
 }
+
+/* 2. EVIDENZIARE LA TERZA STAT CARDE E NUMERO */
+.stats-grid:nth-child(3) {
+    background: linear-gradient(135deg, #4f8cff 0%, #7b3fe4 100%);
+}
+
+.stats-grid:nth-child(3) .stat-number,
+.stats-grid:nth-child(3) .stat-label {
+    color: #fff;
+}
+
+
 
