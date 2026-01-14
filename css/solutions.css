@@ -80,10 +80,47 @@ Aggiungere una transizione fluida per l'effetto */
   box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25);
 }
 
+/* 9. 🔘 Miglioramenti al button */
+/*Il button "Salva Obiettivi" deve sollevarsi di 2px quando ci passi sopra il mouse
+Cambiare anche il colore di sfondo e Aggiungere un'ombra blu */
+.save-btn {
+    transition: transform 0.2s ease, box-shadow 0.2s ease,
+}
 
+.save-btn:hover {
+    transform: translateY(-2px);
+    background: blue;
+    box-shadow: 0 10px 18px rgba(52, 152, 219, 0.35);
+}
 
+/* 10. 📊 Percentuale nella barra di progresso */
+/* Mostra "65%" in bianco dentro la barra di progresso,
+ allineato a destra */
 
+.progress-bar {
+    height: 18px; /* più spazio per il testo */
+    border-radius: 999px;
+}
 
+.progress-fill {
+    border-radius: 999px;
+}
+
+.progress-fill::after {
+    content: "65%";
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 1;
+}
+
+/* 11-12. 🧭 Migliorie alla navigazione */
+/* Aggiungere effetto hover 
+sui link di navigazione (sfondo più scuro e testo blu)
 
 
 
