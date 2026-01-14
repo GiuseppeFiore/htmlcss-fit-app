@@ -1,4 +1,6 @@
 /* 1. 🔥 ICONA FUOCO NELLA PRIMA STAT CARD */
+/* Aggiungere l'emoji "🔥" sopra il numero nella prima carta delle statistiche */
+
 .stats-grid:first-child .stat-number::before {
     content: "🔥";
     display: block;
@@ -8,14 +10,32 @@
 }
 
 /* 2. EVIDENZIARE LA TERZA STAT CARDE E NUMERO */
+/* Cambiare lo sfondo della terza carta statistiche (minuti di allenamento)
+con un gradiente blu-viola (non è necessario che sia identica allo screenshot di soluzione) 
+e testo bianco */
+
 .stats-grid:nth-child(3) {
     background: linear-gradient(135deg, #4f8cff 0%, #7b3fe4 100%);
 }
 
 .stats-grid:nth-child(3) .stat-number,
 .stats-grid:nth-child(3) .stat-label {
-    color: #fff;
+    color: white;
 }
+
+/* 3. ✨ HOVER SULLE STAT CARD */
+/* quando si passa il mouse sopra una qualsiasi carta statistiche, 
+deve sollevarsi di 5px e aumentare l'ombra */
+
+.stats-grid {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stats-grid:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
 
 
 
