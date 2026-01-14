@@ -56,6 +56,14 @@ sinistro verde e sfondo verde molto chiaro */
   background: #eafaf1;
 }
 
+/* 6. ⚡️ ICONA FULMINE DEGLI ESERCIZI PARI */
+/* Aggiungere l'emoji "⚡" all'inizio del nome 
+degli esercizi in posizione pari (2° e 4°) */
+
+.exercise-item:nth-child(even) .exercise-name::before {
+  content: "⚡️";
+}
+
 
 
 
