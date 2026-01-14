@@ -9,7 +9,7 @@
     margin-bottom: 6px;
 }
 
-/* 2. EVIDENZIARE LA TERZA STAT CARDE E NUMERO */
+/* 2. EVIDENZIARE LA TERZA STAT CARD E NUMERO */
 /* Cambiare lo sfondo della terza carta statistiche (minuti di allenamento)
 con un gradiente blu-viola (non è necessario che sia identica allo screenshot di soluzione) 
 e testo bianco */
@@ -44,6 +44,16 @@ e Cambiare lo sfondo in un giallo molto chiaro al secondo workout plan
 .workout-section .workout-plan:nth-of-type(2) {
   border-left: 5px solid orange;
   background: lemonchiffon;
+}
+
+/* 5. 🟢 BORDI VERDI PER PRIMO E ULTIMO ESERCIZIO */
+/* Il primo e ultimo esercizio nella lista devono avere il bordo 
+sinistro verde e sfondo verde molto chiaro */
+
+.exercise-item:first-child,
+.exercise-item:last-child {
+  border-left-color: mediumseagreen;
+  background: #eafaf1;
 }
 
 
