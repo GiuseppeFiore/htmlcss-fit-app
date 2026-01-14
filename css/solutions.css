@@ -120,8 +120,17 @@ Cambiare anche il colore di sfondo e Aggiungere un'ombra blu */
 
 /* 11-12. 🧭 Migliorie alla navigazione */
 /* Aggiungere effetto hover 
-sui link di navigazione (sfondo più scuro e testo blu)
+sui link di navigazione (sfondo più scuro e testo blu) */
 
+.nav-item:hover {
+  background: #1f2d3a;
+  color: cornflowerblue;
+}
+
+.nav-item:first-child {
+  background: #1f2d3a;
+  color: cornflowerblue;
+}
 
 
 
